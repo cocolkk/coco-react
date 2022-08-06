@@ -1,8 +1,12 @@
 import { Divider } from 'antd';
 import React from 'react';
-
-class Home extends React.Component {
+import '../home/home.less';
+export default class Home extends React.Component {
     render() {
-        return <></>;
+        return (
+            <>
+                <div className="home"></div>
+            </>
+        );
     }
 }
