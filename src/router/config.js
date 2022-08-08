@@ -1,27 +1,36 @@
 // import Home from '../views/home';
-import Javascript from '../views/js/javascript';
+import Javascript from '../views/js/js';
 import VueComponet from '../views/vue/vue';
 import { lazy, Suspense } from 'react';
 const Home = lazy(() => import('../views/home'));
+const CssCom = lazy(() => import('../views/css/css'));
+const HtmlCom = lazy(() => import('../views/html/html'));
 const RoutesConfig = [
     {
         path: '/',
         element: Home,
+
+        children: [],
     },
     {
         path: '/home',
         element: Home,
-        exact: false,
+    },
+    {
+        path: '/html',
+        element: HtmlCom,
     },
     {
         path: '/js',
         element: Javascript,
-        exact: false,
     },
     {
         path: '/vue',
         element: VueComponet,
-        exact: false,
+    },
+    {
+        path: '/css',
+        element: CssCom,
     },
 ];
 export default RoutesConfig;

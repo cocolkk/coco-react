@@ -1,7 +1,6 @@
 //config.js
 import * as React from 'react';
 import { Routes, Route, BrowserRouter as Router } from 'react-router-dom';
-
 import RoutesConfig from './config';
 
 const renderRouter = (routerList) => {
