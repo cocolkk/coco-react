@@ -4,7 +4,7 @@ class VueComponet extends React.Component {
     render() {
         return (
             <>
-                <h1>VUE</h1>
+                <h1>VUE 未完待续</h1>
             </>
         );
     }

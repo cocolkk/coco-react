@@ -12,10 +12,10 @@ class Header extends React.Component {
             { id: 3, name: 'CSS', path: '/css' },
             { id: 4, name: 'Javascript', path: '/js' },
             { id: 5, name: 'Vue', path: '/vue' },
-            { id: 6, name: 'React', path: '/home' },
-            { id: 7, name: 'Python', path: '/home' },
-            { id: 8, name: 'Git', path: '/home' },
-            { id: 9, name: 'Docker', path: '/home' },
+            { id: 6, name: 'React', path: '/react' },
+            { id: 7, name: 'Python', path: '/python' },
+            { id: 8, name: 'Git', path: '/git' },
+            { id: 9, name: 'Docker', path: '/docker' },
         ],
     };
     navList() {

@@ -5,6 +5,10 @@ import { lazy, Suspense } from 'react';
 const Home = lazy(() => import('../views/home'));
 const CssCom = lazy(() => import('../views/css/css'));
 const HtmlCom = lazy(() => import('../views/html/html'));
+const ReactCom = lazy(() => import('../views/react/react'));
+const PythonCom = lazy(() => import('../views/python/python'));
+const GitCom = lazy(() => import('../views/git/git'));
+const DockerCom = lazy(() => import('../views/docker/docker'));
 const RoutesConfig = [
     {
         path: '/',
@@ -31,6 +35,22 @@ const RoutesConfig = [
     {
         path: '/css',
         element: CssCom,
+    },
+    {
+        path: '/react',
+        element: ReactCom,
+    },
+    {
+        path: '/python',
+        element: PythonCom,
+    },
+    {
+        path: '/git',
+        element: GitCom,
+    },
+    {
+        path: '/docker',
+        element: DockerCom,
     },
 ];
 export default RoutesConfig;
